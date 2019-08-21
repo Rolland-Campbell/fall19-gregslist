@@ -46,11 +46,82 @@
       </form>
     </div>
     <div id="cars" class="row">
-
     </div>
-  </div>
+    <div class="row justify-content-center">
+      <h1 class="col-12">Add a House!</h1>
+      <form onsubmit="app.controllers.houseController.addHouse(event)" class="col-5">
+        <div class="form-group">
+          <label for="squareFootage">Square Footage</label>
+          <input type="number" class="form-control" name="squareFootage" id="squareFootage"
+            placeholder="How many square feet?" required>
+        </div>
+        <div class="form-group">
+          <label for="bedrooms">bedrooms</label>
+          <input type="number" class="form-control" name="bedrooms" id="bedrooms" placeholder="How many bedrooms?"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="model">Bathrooms</label>
+          <input type="number" class="form-control" name="bathrooms" id="bathrooms" placeholder="How many bathrooms?"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="year">Year</label>
+          <input type="number" min="1890" max="2021" class="form-control" name="year" id="year"
+            placeholder="pick a year" required>
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" placeholder="Type in an image address"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description"
+            placeholder="Type in a description" required>
+        </div>
+        <div class="form-group">
+          <label for="price">Price</label>
+          <input type="number" class="form-control" name="price" id="price" placeholder="Type in a price" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Make House</button>
+      </form>
+    </div>
+    <div id="house" class="row">
+    </div>
+    <div class="row justify-content-center">
+      <h1 class="col-12">Add a Job!</h1>
+      <form onsubmit="app.controllers.jobsController.addJobs(event)" class="col-5">
+        <div class="form-group">
+          <label for="jobName">Job Name</label>
+          <input type="text" class="form-control" name="jobName" id="jobName" placeholder="Name your job" required>
+        </div>
+        <div class="form-group">
+          <label for="salary">salary</label>
+          <input type="number" class="form-control" name="salary" id="salary" placeholder="How much?" required>
+        </div>
+        <div class="form-group">
+          <label for="sickDays">Sick Days</label>
+          <input type="number" class="form-control" name="sickDays" id="sickDays" placeholder="How many sick days?"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="imgUrl">Image</label>
+          <input type="text" class="form-control" name="imgUrl" id="imgUrl" placeholder="Type in an image address"
+            required>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" name="description" id="description"
+            placeholder="Type in a description" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Make a Job</button>
+      </form>
+    </div>
+    <div id="jobs" class="row">
+    </div>
 
-  <script src="app/main.js" type="module"></script>
+    <script src="app/main.js" type="module"></script>
 </body>
 
 </html>
