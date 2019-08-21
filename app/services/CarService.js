@@ -32,7 +32,7 @@ export default class CarService {
   }
 
   constructor() {
-    console.log("hello from service")
+    console.log("hello from car service")
     console.log(_state.cars)
 
   }

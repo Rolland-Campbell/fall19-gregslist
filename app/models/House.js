@@ -20,7 +20,7 @@ export default class House {
         <h3>${this.bathrooms}</h3>
         <h3>${this.price}</h3>
         <p>${this.year}</p>
-        <img src="${this.imgUrl}" alt="" height="200" width="200">
+        <img src="${this.imgUrl}" alt="" height="auto" width="auto">
         <p>${this.description}</p>
         <button class="btn btn-danger" onclick="app.controllers.houseController.deleteHouse(${this._id})">Delete House</button>
       </div>

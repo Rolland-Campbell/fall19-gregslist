@@ -14,7 +14,7 @@ export default class Jobs {
         <h1>${this.jobName}</h1>
         <h3>${this.salary}</h3>
         <h3>${this.sickDays}</h3>
-        <img src="${this.imgUrl}" alt="" height="200" width="200">
+        <img src="${this.imgUrl}" alt="" height="auto" width="auto">
         <p>${this.description}</p>
         <button class="btn btn-danger" onclick="app.controllers.jobsController.deleteJobs(${this._id})">Delete Job</button>
       </div>
